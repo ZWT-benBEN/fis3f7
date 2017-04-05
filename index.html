@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta content="telephone=no" name="format-detection"/>
+    <meta content="address=no" name="format-detection"/>
+    <meta name="apple-mobile-web-app-capable" content="no" />
+    <title>fis3 frame7</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="benny">
+
+    <link rel="apple-touch-icon-precomposed" href="" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="" />
+    <link rel="stylesheet" href="framework7/dist/css/framework7.ios.css">
+    <link rel="stylesheet" href="framework7/dist/css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="css/common.scss">
+    <!--STYLE_PLACEHOLDER-->
+</head>
+<body class="layout-white">
+<div class="statusbar-overlay"></div>
+<div class="panel-overlay"></div>
+</div>
+<div class="views">
+    <div class="view view-main" data-page="home">
+        <link rel="import" href="modules/html/index/index.html?__inline">
+    </div>
+</div>
+<script src="lib/mod.js"></script>
+<script>
+    window.onload = function (){
+        app = require('app/main');
+        app.set.init();
+        var myApp = app.framework.init();
+        var $$ = Dom7;
+    }
+</script>
+</body>
+</html>
