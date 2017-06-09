@@ -203,4 +203,16 @@ fis.media('prd-debug')
         }),
         relative: true,
         useHash: false
+    })
+    .match('**', {
+        deploy: [
+            fis.plugin('skip-packed',{
+                ignore: []
+            }),
+            fis.plugin('local-deliver',{
+                to: 'dist'
+            })
+        ]
     });
+fis.hook('relative');
+fis.match('**', { relative: true });
